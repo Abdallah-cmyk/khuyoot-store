@@ -14,10 +14,14 @@ export default function ProductCard({ product, image }) {
     <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.5 }}>
       <Link to={`/product/${product.id}`} style={{ display: 'block' }} aria-label={`عرض ${product.name}`}>
         <div ref={ref} onMouseMove={handleMove} onMouseLeave={handleLeave} style={{ borderRadius: 14, overflow: 'hidden', background: 'var(--surface-2)', border: '1px solid var(--border)', transition: 'transform 0.25s ease' }}>
-          <div className={image ? '' : 'skeleton-media'} style={{ position: 'relative', height: 220, background: image ? `center/cover no-repeat url(${image})` : swatchGradients[product.swatch] }}>
+          <div className={image ? '' : 'skeleton-media'} style={{ position: 'relative', height: 260, background: image ? `center/cover no-repeat url(${image})` : swatchGradients[product.swatch] }}>
             <span className={`tier-badge ${tier.className}`} style={{ position: 'absolute', top: 10, insetInlineEnd: 10 }}><span aria-hidden="true">{tier.icon}</span>{tier.label}</span>
           </div>
-          <div style={{ padding: '14px 16px' }}><div style={{ fontSize: 13, color: 'var(--text-primary)', marginBottom: 6 }}>{product.name}</div><div style={{ fontSize: 15, fontWeight: 800, color: 'var(--gold)' }}>{product.price} ج.م</div></div>
+          <div style={{ padding: '14px 16px' }}>
+            <div style={{ fontSize: 13, color: 'var(--text-primary)', marginBottom: 6 }}>{product.name}</div>
+            <div style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 8 }}>{product.category} · {product.audience}</div>
+            <div style={{ fontSize: 14, fontWeight: 800, color: 'var(--gold)' }}>{product.price ? `${product.price} ج.م` : 'السعر عند الطلب'}</div>
+          </div>
         </div>
       </Link>
     </motion.div>
