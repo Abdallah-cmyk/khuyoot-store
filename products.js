@@ -1,6 +1,7 @@
 // Khuyoot catalog — products mapped to uploaded repository photos.
-// Files inside /public are served from the Vite base URL.
-const photo = (name) => `${import.meta.env.BASE_URL}${encodeURI(name)}`;
+// Product photos live directly inside /public.
+// Using absolute root paths keeps the image URLs stable on Vercel and other root-domain deployments.
+const photo = (name) => `/${encodeURI(name)}`;
 
 export const products = [
   { id: 1, name: 'هودي أسود وبرتقالي', category: 'هودي', audience: 'رجالي', price: null, tier: 'premium', colors: ['أسود', 'برتقالي'], sizes: ['S','M','L','XL','XXL'], image: photo('IMG-20260803-WA0030.jpg'), images: [photo('IMG-20260803-WA0030.jpg')], description: 'هودي بتصميم لوني أسود وبرتقالي، مناسب للإطلالات اليومية والكاجوال.' },
