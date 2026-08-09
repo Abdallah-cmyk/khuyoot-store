@@ -17,9 +17,9 @@ export default function Product() {
   return (
     <div className="container" style={{ padding: '48px 24px 90px', display: 'grid', gridTemplateColumns: 'minmax(0,1.1fr) minmax(0,0.9fr)', gap: 48 }}>
       <div>
-        <div className="skeleton-media" style={{ height: 480, borderRadius: 18, background: swatchGradients[product.swatch], filter: `hue-rotate(${angle * 6}deg)`, transition: 'filter 0.3s ease' }} />
-        <div style={{ display: 'flex', gap: 8, marginTop: 14 }}>{[0,1,2,3].map((i) => <button key={i} onClick={() => setAngle(i)} aria-label={`عرض الزاوية ${i + 1}`} style={{ width: 56, height: 56, borderRadius: 10, border: angle === i ? '2px solid var(--gold)' : '1px solid var(--border)', background: swatchGradients[product.swatch], filter: `hue-rotate(${i * 6}deg)` }} />)}</div>
-        <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 10 }}>الصورة النهائية لهذا المنتج ستُضاف عند اعتماد صور المنتجات.</p>
+        <div style={{ height: 480, borderRadius: 18, background: product.image ? `center/contain no-repeat url(${product.image})` : swatchGradients[product.swatch], backgroundColor: 'var(--surface-2)', transition: 'filter 0.3s ease', filter: `hue-rotate(${product.image ? 0 : angle * 6}deg)` }} />
+        <div style={{ display: 'flex', gap: 8, marginTop: 14 }}>{[0,1,2,3].map((i) => <button key={i} onClick={() => setAngle(i)} aria-label={`عرض الزاوية ${i + 1}`} style={{ width: 56, height: 56, borderRadius: 10, border: angle === i ? '2px solid var(--gold)' : '1px solid var(--border)', background: product.image ? `center/cover no-repeat url(${product.image})` : swatchGradients[product.swatch], filter: product.image ? 'none' : `hue-rotate(${i * 6}deg)` }} />)}</div>
+        {!product.image && <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 10 }}>الصورة النهائية لهذا المنتج ستُضاف عند اعتماد صور المنتجات.</p>}
       </div>
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <span className={`tier-badge ${tier.className}`}><span aria-hidden="true">{tier.icon}</span>{tier.label}</span>
