@@ -1,18 +1,24 @@
-// Placeholder catalog — swap `swatch` for a real image URL per product
-// once photography is ready (see ProductCard.jsx: image prop).
+// Khuyoot & Nasej — initial real catalog
+// Product images will be added to /public/products as the final photography is approved.
 export const products = [
-  { id: 1, name: 'قميص كتان', tier: 'vip', price: 450, swatch: 'gold' },
-  { id: 2, name: 'بلوزة صيفية', tier: 'premium', price: 280, swatch: 'emerald' },
-  { id: 3, name: 'تيشيرت أساسي', tier: 'classic', price: 150, swatch: 'bronze' },
-  { id: 4, name: 'فستان صيفي حرير صناعي', tier: 'premium', price: 320, swatch: 'emerald' },
-  { id: 5, name: 'جاكيت شتوي', tier: 'vip', price: 650, swatch: 'gold' },
-  { id: 6, name: 'بنطلون قماش', tier: 'classic', price: 220, swatch: 'bronze' },
-  { id: 7, name: 'فستان سهرة', tier: 'vip', price: 780, swatch: 'gold' },
-  { id: 8, name: 'جيبة', tier: 'premium', price: 260, swatch: 'emerald' },
+  { id: 1, name: 'هودي كاجوال أسود وبرتقالي', category: 'هودي', audience: 'رجالي', price: 0, swatch: 'bronze', description: 'هودي بتصميم لوني عصري، مناسب للإطلالات اليومية والكاجوال. متوفر بمقاسات متنوعة.' },
+  { id: 2, name: 'بنطلون رياضي متعدد الألوان', category: 'بنطلون رياضي', audience: 'رجالي', price: 0, swatch: 'emerald', description: 'بنطلون رياضي عملي للاستخدام اليومي، متوفر بعدة ألوان ومقاسات.' },
+  { id: 3, name: 'سويت شيرت بتصميم Adventure', category: 'سويت شيرت', audience: 'رجالي', price: 0, swatch: 'bronze', description: 'سويت شيرت بتصميم بسيط مع تفاصيل كتابية، مناسب للإطلالة الكاجوال.' },
+  { id: 4, name: 'بدلة رياضية بلون كريمي', category: 'بدلة رياضية', audience: 'رجالي', price: 0, swatch: 'gold', description: 'طقم رياضي بلون كريمي مكوّن من قطعة علوية وبنطلون، بتصميم هادئ وأنيق.' },
+  { id: 5, name: 'هودي سادة بألوان متعددة', category: 'هودي', audience: 'رجالي', price: 0, swatch: 'emerald', description: 'هودي سادة بقصة مريحة، متوفر بألوان متعددة ومقاسات متنوعة.' },
+  { id: 6, name: 'تيشيرت سادة للطباعة حسب الطلب', category: 'تيشيرت', audience: 'رجالي', price: 0, swatch: 'gold', description: 'تيشيرت سادة يمكن تخصيصه بطباعة عبارة أو تصميم يختاره العميل حسب الإمكانية المتاحة.' },
+  { id: 7, name: 'بنطلون جينز رجالي', category: 'جينز', audience: 'رجالي', price: 0, swatch: 'bronze', description: 'بنطلون جينز بقصات متنوعة للاستخدام اليومي، مع مقاسات متعددة.' },
+  { id: 8, name: 'ملابس أطفال كاجوال', category: 'أطفال', audience: 'أطفال', price: 0, swatch: 'emerald', description: 'تشكيلة ملابس أطفال كاجوال بتصاميم وألوان متنوعة حسب المقاسات المتاحة.' },
+  { id: 9, name: 'قمصان رجالية', category: 'قمصان', audience: 'رجالي', price: 0, swatch: 'gold', description: 'قمصان رجالية بتصاميم مختلفة تناسب الإطلالات اليومية وشبه الرسمية.' },
+  { id: 10, name: 'تيشيرتات رجالية بتصاميم متنوعة', category: 'تيشيرت', audience: 'رجالي', price: 0, swatch: 'emerald', description: 'تيشيرتات بقصات وتصاميم متنوعة، مع خيارات متعددة للمقاسات والألوان.' },
+];
+
+export const categories = [
+  'الكل', 'تيشيرت', 'قمصان', 'جينز', 'بنطلون رياضي', 'هودي', 'بدلة رياضية', 'أطفال'
 ];
 
 export const tierLabels = {
-  vip: { label: 'VIP', icon: '♛', className: 'tier-vip' },
-  premium: { label: 'بريميوم', icon: '◆', className: 'tier-premium' },
-  classic: { label: 'كلاسيك', icon: '❖', className: 'tier-classic' },
+  vip: { label: 'مميز', icon: '★', className: 'tier-vip' },
+  premium: { label: 'مختار', icon: '◆', className: 'tier-premium' },
+  classic: { label: 'أساسي', icon: '●', className: 'tier-classic' },
 };
