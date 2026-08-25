@@ -1,27 +1,2 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from './Logo.jsx';
-
-export default function Footer() {
-  return (
-    <footer style={{ borderTop: '1px solid var(--border)', padding: '40px 0' }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 28 }}>
-        <div>
-          <Logo size={26} />
-          <p style={{ maxWidth: 360, color: 'var(--text-muted)', fontSize: 13, lineHeight: 1.9, marginTop: 12 }}>
-            خيُوط — متجر أزياء مصري يهتم بالاختيارات الواضحة وتجربة شراء بسيطة.
-          </p>
-        </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'center', fontSize: 13 }}>
-          <Link to="/about">من نحن</Link>
-          <Link to="/contact">تواصل معنا</Link>
-          <Link to="/size-guide">دليل المقاسات</Link>
-          <Link to="/shipping-returns">الشحن والاسترجاع</Link>
-          <Link to="/privacy">الخصوصية</Link>
-          <Link to="/terms">الشروط والأحكام</Link>
-        </div>
-        <div style={{ width: '100%', fontSize: 12, color: 'var(--text-muted)' }}>© خيُوط — صُنع في مصر</div>
-      </div>
-    </footer>
-  );
-}
+export default function Footer(){return <footer id="contact" style={{background:'#171716',color:'#fff',padding:'55px 24px 25px',marginTop:20}}><div style={{maxWidth:1200,margin:'auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr',gap:40}}><div><div style={{fontSize:22,fontWeight:700}}>KHYOOT</div><p style={{color:'#aaa',fontSize:11,lineHeight:2,maxWidth:340}}>خيوط، أدوات كروشيه، وإكسسوارات مختارة لصنّاع يحبون التفاصيل.</p></div><div><b style={{fontSize:11}}>روابط سريعة</b><div style={{display:'grid',gap:9,marginTop:14,fontSize:10,color:'#aaa'}}><a href="#products">المنتجات</a><a href="#reviews">التقييمات</a><a href="/checkout">إتمام الطلب</a></div></div><div><b style={{fontSize:11}}>الدفع والشحن</b><p style={{fontSize:10,color:'#aaa',lineHeight:2}}>دفع عند الاستلام · شحن لجميع المحافظات · دعم واتساب</p></div></div><div style={{maxWidth:1200,margin:'40px auto 0',paddingTop:18,borderTop:'1px solid #333',fontSize:9,color:'#777'}}>© {new Date().getFullYear()} Khuyoot Store. جميع الحقوق محفوظة.</div></footer>}
