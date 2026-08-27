@@ -1,41 +1,63 @@
-# Khuyoot Store — خيوط
+# خيُوط (Khuyoot) — متجر أزياء فاخر
 
-متجر إلكتروني سريع وحديث للخيوط، الصوف، أدوات الكروشيه وإكسسوارات الحرف اليدوية.
+مشروع React + Vite، بهوية بصرية فاخرة (Dark/Light mode)، خلفية ثلاثية الأبعاد بـ Three.js
+(عبر react-three-fiber)، حركات تمرير بـ Framer Motion، وثلاث فئات منتجات (VIP / بريميوم / كلاسيك).
 
-## التقنية
-- React 18 + Vite
-- Framer Motion للحركات الخفيفة
-- React Router
-- CSS responsive mobile-first
-- LocalStorage للسلة
-- WhatsApp checkout بدون backend
-- جاهز للنشر على Vercel
+## التشغيل محلياً
 
-## التشغيل
 ```bash
 npm install
 npm run dev
 ```
 
-## الإنتاج
+يفتح الموقع على `http://localhost:5173`.
+
+## البناء للنشر
+
 ```bash
 npm run build
-npm run preview
 ```
 
-## الوظائف
-- شريط عروض متحرك
-- Header ثابت ومتجاوب
-- بحث وفلاتر فورية
-- بطاقات منتجات مع السعر والتقييم والمخزون
-- Quick View
-- صفحة تفاصيل المنتج واختيار اللون
-- سلة مشتريات مع تعديل الكمية
-- Checkout من صفحة واحدة
-- إرسال الطلب كاملًا إلى WhatsApp
-- زر WhatsApp عالمي
-- تقييمات وثقة اجتماعية
-- تصميم RTL عربي ومتوافق مع الهاتف والكمبيوتر
+الملفات الناتجة في مجلد `dist/`، جاهزة للرفع على أي استضافة (Vercel, Netlify, GitHub Pages...).
 
-## ملاحظة الصور
-بيانات المنتجات تستخدم صورًا مؤقتة من Unsplash. عند توفر صور المنتجات الحقيقية، ضعها داخل `public/images` وعدّل `products.js` لاستخدام المسارات المحلية لتحسين الاعتمادية والسرعة.
+## رفع المشروع على GitHub
+
+هذه المحادثة مش متصلة بحسابك على GitHub، فمش هينفع أرفع الملفات مباشرة —
+لكن الخطوات بسيطة من جهازك:
+
+```bash
+cd khuyoot-store
+git init
+git add .
+git commit -m "Initial commit: خيُوط storefront"
+git branch -M main
+git remote add origin https://github.com/<username>/<repo-name>.git
+git push -u origin main
+```
+
+لو عندك مستودع فاضي جاهز على GitHub، استبدل الرابط في `git remote add` برابط مستودعك.
+
+بديل: لو حملت [Claude Code](https://claude.com/claude-code) أو ربطت GitHub كـ connector
+في المحادثة، أقدر أساعدك تدفع الكود مباشرة من غير خطوات يدوية.
+
+## هيكل المشروع
+
+```
+src/
+  components/    Header, Footer, Logo (SVG), Hero3D (Three.js), ProductCard, WhatsAppButton
+  pages/         Home, Shop, Product, Cart, Checkout
+  data/          products.js — بيانات المنتجات التجريبية والفئات
+  ThemeContext.jsx  منطق الوضع الليلي/النهاري
+  index.css      نظام الألوان والخطوط (design tokens)
+```
+
+## استبدال الصور المؤقتة بصور حقيقية
+
+كل صور المنتجات حالياً عبارة عن تدرجات لونية (skeleton placeholders) حسب الفئة.
+لاستبدالها بصورة حقيقية، مرّر خاصية `image` لمكوّن `ProductCard`:
+
+```jsx
+<ProductCard product={product} image="/images/product-1.jpg" />
+```
+
+وحدّث بيانات كل منتج في `src/data/products.js` بنفس الطريقة.
