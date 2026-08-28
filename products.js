@@ -1,5 +1,5 @@
 // =========================================================
-// بيانات متجر خُيوط (Khyoot Store) — مسارات الصور المحلية داخل public/images/products
+// بيانات متجر خُيوط (Khyoot Store) — مسارات الصور الفعلية من public/images/products/
 // =========================================================
 
 export const tierLabels = {
@@ -35,7 +35,7 @@ export const products = [
     sizes: ['M','L','XL','XXL'],
     description: 'طقم صيفي/خريفي فاخر مكون من قميص بليزر بأزرار وجيوب صدر مع سروال مريح مصنع من نسيج الوافل القطني البارز ثلاثي الأبعاد لتهوية ممتازة.',
     fabric: 'قطن الوافل البارز (Waffle-Knit Cotton) عالي التهوية', 
-    images: ['/images/products/IMG-20260803-WA0004.jpg']
+    images: ['/images/products/03540525251-A20M.jpg']
   },
   {
     id: 'kh-sweater-brown-knit', 
@@ -49,7 +49,7 @@ export const products = [
     sizes: ['M','L','XL','XXL'],
     description: 'بلوفر كلاسيكي تريكو محبوك من ألياف الصوف الناعمة الدافئة بدرجة البني المارل الغني مع ياقة بولو بثلاثة أزرار وأكمام ملمومة.',
     fabric: 'تريكو صوفي مخلوط (Melange Wool Knit)', 
-    images: ['/images/products/IMG-20260803-WA0005.jpg']
+    images: ['/images/products/03665507803-A20M.jpg']
   },
   {
     id: 'kh-polo-knit-white', 
@@ -63,7 +63,7 @@ export const products = [
     sizes: ['S','M','L','XL','XXL'],
     description: 'قميص بولو صيفي محبوك من خيوط قطنية ناعمة، بتصميم أنيق ومريح مناسب للإطلالات اليومية.',
     fabric: '100% خيوط قطن ممشوط محبوكة', 
-    images: ['/images/products/IMG-20260803-WA0006.jpg']
+    images: ['/images/products/07210507403-A20M.jpg']
   },
   {
     id: 'kh-polo-ribbed-beige', 
@@ -77,7 +77,7 @@ export const products = [
     sizes: ['M','L','XL','XXL'],
     description: 'قميص بولو ناعم محبوك من التريكو المضلع طولياً بياقة مفرودة بدون أزرار ومظهر أنيق وفاخر.',
     fabric: 'تريكو ناعم عالي التهوية', 
-    images: ['/images/products/IMG-20260803-WA0007.jpg']
+    images: ['/images/products/07230933401-A20M.jpg']
   },
   {
     id: 'kh-coat-02', 
@@ -91,7 +91,7 @@ export const products = [
     sizes: ['M','L','XL'],
     description: 'معطف شتوي بقوام أنيق، ببطانة داخلية ناعمة وتفاصيل عملية مناسبة للإطلالات الرسمية.',
     fabric: '80% صوف طبيعي معالج + 20% بوليستر', 
-    images: ['/images/products/IMG-20260803-WA0008.jpg']
+    images: ['/images/products/07232529250-A20M.jpg']
   },
   {
     id: 'kh-sweatpants', 
@@ -105,7 +105,7 @@ export const products = [
     sizes: ['M','L','XL','XXL','XXXL'],
     description: 'بنطال جوجر من خام الميلتون القطني الثقيل المبطن بظهر ناعم للدفء والراحة. حزام خصر مرن وأطراف مطاطية وتطريز جانبي ثابت.',
     fabric: '80% قطن طبيعي + 20% بوليستر (Anti-Pilling)', 
-    images: ['/images/products/IMG-20260803-WA0009.jpg']
+    images: ['/images/products/07660501427-A20M.jpg']
   },
   {
     id: 'kh-jeans-light-blue', 
@@ -119,7 +119,7 @@ export const products = [
     sizes: ['30','31','32','33','34','36','38'],
     description: 'جينز كلاسيك معالج بالغسيل الحجري من القطن الثقيل مع خياطة نحاسية مزدوجة وأزرار معدنية.',
     fabric: '100% دنيم قطني ثقيل (Cotton Denim)', 
-    images: ['/images/products/IMG-20260803-WA0010.jpg']
+    images: ['/images/products/07660503434-A20M.jpg']
   },
   {
     id: 'kh-tank-polo-white', 
@@ -133,7 +133,7 @@ export const products = [
     sizes: ['S','M','L','XL','XXL'],
     description: 'تيشيرت صيفي بدون أكمام بياقة بولو مفتوحة مصنع من نسيج الوافل المحبوك والبارز لتهوية عالية.',
     fabric: '100% قطن محبوك نسيج وافل', 
-    images: ['/images/products/IMG-20260803-WA0011.jpg']
+    images: ['/images/products/IMG-20260803-WA0023.jpg']
   },
   {
     id: 'kh-polo-retro-striped', 
@@ -147,7 +147,7 @@ export const products = [
     sizes: ['S','M','L','XL','XXL'],
     description: 'بولو صيفي بياقة مفتوحة محبوك بتقليم طولي مدمج بالنحاسي والزيتوني لتهوية ممتازة وإطلالة ريترو.',
     fabric: '100% قطن مخرم ومحبوك (Open-Weave Cotton)', 
-    images: ['/images/products/IMG-20260803-WA0012.jpg']
+    images: ['/images/products/IMG-20260803-WA0024.jpg']
   },
   {
     id: 'kh-sweater-ribbed-white', 
@@ -161,7 +161,7 @@ export const products = [
     sizes: ['S','M','L','XL','XXL'],
     description: 'سويت شيرت قطني بياقة دائرية ونقشة تريكو ضلعية طولية بارزة مع شعار معدني ناعم على الصدر.',
     fabric: 'تريكو مضلع (Rib-Knit Fabric) عالي المرونة', 
-    images: ['/images/products/IMG-20260803-WA0013.jpg']
+    images: ['/images/products/IMG-20260803-WA0025.jpg']
   },
   {
     id: 'kh-shorts-melton', 
@@ -175,7 +175,7 @@ export const products = [
     sizes: ['M','L','XL','XXL'],
     description: 'شورت صيفي مريح من خام الميلتون القطني مع حزام خصر مرن برباط تعديل وخياطة أمامية طولية وجيب خلفي.',
     fabric: 'ميلتون قطني صيفي ناعم وبدون تبطين حراري', 
-    images: ['/images/products/IMG-20260803-WA0014.jpg']
+    images: ['/images/products/IMG-20260803-WA0026.jpg']
   },
   {
     id: 'kh-tee-stwd', 
@@ -189,7 +189,7 @@ export const products = [
     sizes: ['S','M','L','XL','XXL'],
     description: 'تيشيرت أوفرسايز رمادي فحمي بأكتاف مائلة وطباعة جرافيكية، مناسب للإطلالات الكاجوال.',
     fabric: '100% قطن ثقيل بكثافة 220 غرام/م²', 
-    images: ['/images/products/IMG-20260803-WA0015.jpg']
+    images: ['/images/products/IMG-20260803-WA0027.jpg']
   },
   {
     id: 'kh-tee-summer-white', 
@@ -203,107 +203,7 @@ export const products = [
     sizes: ['S','M','L','XL','XXL'],
     description: 'تيشيرت أوفرسايز قطن أبيض نقي بطباعة صيفية أمامية وخلفية، مناسب للإطلالات اليومية.',
     fabric: '100% قطن ثقيل عالي الجودة', 
-    images: ['/images/products/IMG-20260803-WA0016.jpg']
-  }
-];
-
-export const categories = ['الكل', 'VIP', 'بريميوم', 'كلاسيك'];  {
-    id: 'kh-jeans-light-blue', 
-    name: 'بنطال جينز كلاسيك بدرجة غسيل ثلجي فاتح', 
-    tier: 'premium', 
-    swatch: 'emerald', 
-    price: 720, 
-    originalPrice: 890,
-    badge: '◆ بريميوم', 
-    colors: ['أزرق ثلجي فاتح'], 
-    sizes: ['30','31','32','33','34','36','38'],
-    description: 'جينز كلاسيك معالج بالغسيل الحجري من القطن الثقيل مع خياطة نحاسية مزدوجة وأزرار معدنية.',
-    fabric: '100% دنيم قطني ثقيل (Cotton Denim)', 
-    images: ['https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'kh-tank-polo-white', 
-    name: 'تيشيرت كت بولو محبوك وافل أبيض', 
-    tier: 'premium', 
-    swatch: 'emerald', 
-    price: 490, 
-    originalPrice: 620,
-    badge: '◆ بريميوم', 
-    colors: ['أبيض ناصع'], 
-    sizes: ['S','M','L','XL','XXL'],
-    description: 'تيشيرت صيفي بدون أكمام بياقة بولو مفتوحة مصنع من نسيج الوافل المحبوك والبارز لتهوية عالية.',
-    fabric: '100% قطن محبوك نسيج وافل', 
-    images: ['https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'kh-polo-retro-striped', 
-    name: 'قميص بولو تريكو ريترو مقلم طولي', 
-    tier: 'premium', 
-    swatch: 'emerald', 
-    price: 620, 
-    originalPrice: 750,
-    badge: '◆ بريميوم', 
-    colors: ['أوف وايت مقلم بالنحاسي والزيتوني'], 
-    sizes: ['S','M','L','XL','XXL'],
-    description: 'بولو صيفي بياقة مفتوحة محبوك بتقليم طولي مدمج بالنحاسي والزيتوني لتهوية ممتازة وإطلالة ريترو.',
-    fabric: '100% قطن مخرم ومحبوك (Open-Weave Cotton)', 
-    images: ['https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'kh-sweater-ribbed-white', 
-    name: 'سويت شيرت تريكو ضلعي أبيض ناصع', 
-    tier: 'premium', 
-    swatch: 'emerald', 
-    price: 580, 
-    originalPrice: 720,
-    badge: '◆ بريميوم', 
-    colors: ['أبيض ناصع'], 
-    sizes: ['S','M','L','XL','XXL'],
-    description: 'سويت شيرت قطني بياقة دائرية ونقشة تريكو ضلعية طولية بارزة مع شعار معدني ناعم على الصدر.',
-    fabric: 'تريكو مضلع (Rib-Knit Fabric) عالي المرونة', 
-    images: ['https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'kh-shorts-melton', 
-    name: 'شورت ميلتون أوفرسايز بجيوب وخياطة طولية', 
-    tier: 'classic', 
-    swatch: 'bronze', 
-    price: 380, 
-    originalPrice: 480,
-    badge: '❖ كلاسيك', 
-    colors: ['رمادي فاتح مارل','أسود ملكي'], 
-    sizes: ['M','L','XL','XXL'],
-    description: 'شورت صيفي مريح من خام الميلتون القطني مع حزام خصر مرن برباط تعديل وخياطة أمامية طولية وجيب خلفي.',
-    fabric: 'ميلتون قطني صيفي ناعم وبدون تبطين حراري', 
-    images: ['https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'kh-tee-stwd', 
-    name: 'تيشيرت أوفرسايز جرافيك STWD فحمي', 
-    tier: 'classic', 
-    swatch: 'bronze', 
-    price: 450, 
-    originalPrice: 550,
-    badge: '❖ كلاسيك', 
-    colors: ['رمادي فحمي'], 
-    sizes: ['S','M','L','XL','XXL'],
-    description: 'تيشيرت أوفرسايز رمادي فحمي بأكتاف مائلة وطباعة جرافيكية، مناسب للإطلالات الكاجوال.',
-    fabric: '100% قطن ثقيل بكثافة 220 غرام/م²', 
-    images: ['https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'kh-tee-summer-white', 
-    name: 'تيشيرت أوفرسايز أبيض جرافيك SUMMER RHYTHMS', 
-    tier: 'classic', 
-    swatch: 'bronze', 
-    price: 440, 
-    originalPrice: 540,
-    badge: '❖ كلاسيك', 
-    colors: ['أبيض ناصع'], 
-    sizes: ['S','M','L','XL','XXL'],
-    description: 'تيشيرت أوفرسايز قطن أبيض نقي بطباعة صيفية أمامية وخلفية، مناسب للإطلالات اليومية.',
-    fabric: '100% قطن ثقيل عالي الجودة', 
-    images: ['https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80']
+    images: ['/images/products/IMG-20260803-WA0028.jpg']
   }
 ];
 
